@@ -1,0 +1,17 @@
+.info-sidebar {
+  padding-top: 26px;
+  background-color: var(--background-color);
+}
+
+.info-sidebar h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 17px;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 530px) {
+  .info-sidebar {
+    display: none;
+  }
+}
