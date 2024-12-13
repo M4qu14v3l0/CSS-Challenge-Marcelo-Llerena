@@ -2,7 +2,7 @@ import { Profile } from "../info_sidebar/components/profile/Profile";
 import { Card } from "../shared/card/Card";
 import { Table } from "./components/recent-files/Table";
 import { Search } from "./components/search/Search";
-import { SmallCard } from "./components/shared-files/SmallCard";
+import { SmallCard } from "../shared/small-card/SmallCard";
 import { folders, foldersShared } from "./data/folders";
 import "./Main.css";
 
