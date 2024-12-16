@@ -1,5 +1,5 @@
-import styles from "./sidebarLinks.module.css";
-import { Link } from "../../interfaces/link.iterface";
+import styles from "./SidebarLinks.module.css";
+import { Link } from "../../interfaces/link.interface";
 import useSelectedLink from "../../../../../hooks/useSelected";
 
 interface SidebarLinksProps {
