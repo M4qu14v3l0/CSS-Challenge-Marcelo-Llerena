@@ -3,13 +3,6 @@
   background-color: var(--background-color);
 }
 
-.sidebarContainer h2 {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 17px;
-  margin-bottom: 22px;
-}
-
 @media (max-width: 530px) {
   .sidebarContainer {
     display: none;

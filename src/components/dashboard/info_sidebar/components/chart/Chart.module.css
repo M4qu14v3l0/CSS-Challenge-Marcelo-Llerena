@@ -7,8 +7,9 @@
 .infoSidebar h2 {
   color: var(--text-h2);
   font-weight: 400;
-  margin-bottom: 28px;
+  font-size: 20px;
   margin-top: 10px;
+  margin-bottom: 28px;
 }
 
 .infoSidebar .chart {
@@ -63,6 +64,10 @@
   width: 115px;
   height: 115px;
   border-radius: 50%;
+}
+
+.storageContainer {
+  margin-top: 10px;
 }
 
 .storageInfo {
