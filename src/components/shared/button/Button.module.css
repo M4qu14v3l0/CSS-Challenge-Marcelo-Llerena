@@ -18,20 +18,7 @@
   margin: 0px auto;
 }
 
-.button__icon {
-  display: flex;
-  justify-content: center;
-  gap: 2px;
-  align-items: center;
-}
-
-.button__icon__bg {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.bg-transparent {
+.bgTransparent {
   width: 21px;
   height: 21px;
   display: flex;
@@ -41,7 +28,7 @@
   background-color: rgb(255, 255, 255, 0.3);
 }
 
-.button-modal {
+.buttonModal {
   padding-top: 19px;
   padding-left: 14px;
   position: absolute;
@@ -58,7 +45,7 @@
   background-color: var(--background-modal-color);
 }
 
-.button-modal::before {
+.buttonModal::before {
   content: "";
   position: absolute;
 
@@ -73,7 +60,7 @@
   border-bottom: 8px solid var(--background-modal-color);
 }
 
-.button-modal span {
+.buttonModal span {
   display: flex;
   align-items: center;
   gap: 4px;

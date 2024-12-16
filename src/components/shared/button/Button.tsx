@@ -4,7 +4,7 @@ import {
   RiMore2Line,
   RiUpload2Line,
 } from "@remixicon/react";
-import "./Button.css";
+import styles from "./Button.module.css";
 import { useState } from "react";
 
 type ButtonPropsBase = {
@@ -35,16 +35,18 @@ export const Button = ({
   };
 
   return (
-    <button className={`button`} onClick={handleOpenModal}>
+    <button className={`${styles.button}`} onClick={handleOpenModal}>
       <p>{label}</p>
       {icon ? (
-        <span className={transparentBg ? "bg-transparent" : ""}>{icon}</span>
+        <span className={transparentBg ? styles.bgTransparent : ""}>
+          {icon}
+        </span>
       ) : (
         <></>
       )}
 
       {isOpen && openModal && (
-        <div className="button-modal">
+        <div className={styles.buttonModal}>
           <span>
             <RiUpload2Line size={15} />
             Upload Files
