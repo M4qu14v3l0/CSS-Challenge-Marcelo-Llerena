@@ -1,7 +1,7 @@
 import { RiMoonClearLine, RiSquareLine, RiSunLine } from "@remixicon/react";
 import { useState } from "react";
 
-import styles from "./profile.module.css";
+import styles from "./Profile.module.css";
 
 export const Profile = () => {
   const [darkMode, setDarkMode] = useState(false);
