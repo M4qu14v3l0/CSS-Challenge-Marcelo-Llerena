@@ -1,0 +1,91 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.table tr {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 20px;
+  font-size: 12px;
+}
+
+.table td {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table tr td:not(:first-child) {
+  color: var(--text-secondary-color);
+  display: flex;
+  align-items: center;
+}
+
+.table tr td {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+}
+
+.table tr td:first-child {
+  padding-left: 14px;
+}
+
+.table tr td:first-child p {
+  padding-left: 4px;
+}
+
+.table tr td:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table tr:not(:first-child) {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-table);
+  height: 42px;
+}
+
+.table tr td p {
+  color: var(--text-h2);
+}
+
+.tableHeader th {
+  display: flex;
+  text-align: left;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+
+.square {
+  width: 21px;
+  height: 21px;
+  border-radius: var(--border-radius-input);
+}
+
+@media (max-width: 780px) {
+  .table tr {
+    grid-template-columns: 180px 1fr 1fr 40px;
+  }
+}
+
+@media (max-width: 660px) {
+  .table tr {
+    grid-template-columns: 1fr 1fr 1fr 40px;
+  }
+
+  .table tr td p {
+    display: none;
+  }
+
+  .table tr td:last-child {
+    padding-right: 5px;
+    justify-content: center;
+  }
+
+  .tableMonth {
+    display: none;
+  }
+}

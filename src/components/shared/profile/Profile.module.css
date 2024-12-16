@@ -1,0 +1,35 @@
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e0e7f1;
+}
+
+.profileIcons {
+  display: flex;
+  gap: 13px;
+}
+
+.profileUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.profileUser p {
+  color: var(--text-h2);
+}
+
+.profileContainer img {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+
+@media (max-width: 530px) {
+  .profileContainer {
+    display: none;
+  }
+}

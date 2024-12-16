@@ -1,16 +1,15 @@
-import "./App.css";
-import InfoSidebar from "./components/info_sidebar/InfoSidebar";
-import InfoSidebarResponsive from "./components/info_sidebar/components/responsive/InfoSidebarResponsive";
-import Main from "./components/main/Main";
-import Sidebar from "./components/sidebar/Sidebar";
+import styles from "./App.module.css";
+import InfoSidebar from "./components/dashboard/info_sidebar/InfoSidebar";
+
+import Main from "./components/dashboard/main/Main";
+import Sidebar from "./components/dashboard/sidebar/Sidebar";
 
 function App() {
   return (
-    <div className="app__container">
+    <div className={styles.appContainer}>
       <Sidebar />
       <Main />
       <InfoSidebar />
-      <InfoSidebarResponsive />
     </div>
   );
 }

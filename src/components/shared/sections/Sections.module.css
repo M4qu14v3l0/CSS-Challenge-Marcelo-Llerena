@@ -1,0 +1,12 @@
+.section {
+  height: fit-content;
+}
+
+.section h2 {
+  margin: 0;
+  /* margin-bottom: 24px; */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--text-h2);
+}
