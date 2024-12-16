@@ -6,12 +6,14 @@ import {
   RiFileTransferLine,
   RiDeleteBin2Line,
   RiAddLine,
+  RiArrowLeftWideLine,
+  RiArrowRightWideLine,
 } from "@remixicon/react";
 
 import styles from "./Sidebar.module.css";
 import useToggle from "../../../hooks/useToggle";
 import SidebarLinks from "./components/sidebarLinks/SidebarLinks";
-import OpenIcon from "./components/openIcon/OpenIcon";
+import OpenIcon from "../../shared/openIcon/OpenIcon";
 
 import { Button } from "../../shared/button/Button";
 
@@ -89,7 +91,12 @@ export default function Sidebar() {
       >
         <SidebarLinks links={links} />
         {/* Open Icon appears only in responsive mode */}
-        <OpenIcon handleToggle={handleToggle} toggle={toggle} />
+        <OpenIcon
+          handleToggle={handleToggle}
+          toggle={toggle}
+          toggleOnIcon={<RiArrowLeftWideLine size={10} color="white" />}
+          toggleOffIcon={<RiArrowRightWideLine size={10} color="white" />}
+        />
         <Button
           label="Create New"
           icon={<RiAddLine size={15} />}

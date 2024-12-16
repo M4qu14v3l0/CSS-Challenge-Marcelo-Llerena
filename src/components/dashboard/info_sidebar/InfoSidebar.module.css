@@ -3,8 +3,35 @@
   background-color: var(--background-color);
 }
 
-@media (max-width: 530px) {
+@media (max-width: 560px) {
   .sidebarContainer {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -252px;
+    width: 252px;
+    height: 100%;
+    padding-top: 26px;
+    transition: right 0.4s ease;
+    z-index: 10;
+    box-shadow: var(--box-shadow-color);
+  }
+
+  .sidebarResponsive__show {
+    right: 0;
+  }
+
+  .openIconInfo {
+    position: absolute;
+    top: 20%;
+    left: -30px;
+    background-color: var(--sidebar-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
   }
 }
