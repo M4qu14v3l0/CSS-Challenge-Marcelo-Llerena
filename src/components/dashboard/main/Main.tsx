@@ -14,9 +14,9 @@ export default function Main() {
   return (
     <main className={styles.mainContainer}>
       {/* responsive only */}
-      <div className={styles.showProfile}>
-        <Profile />
-      </div>
+
+      <Profile showProfile={styles.showProfile} />
+
       <Search />
 
       <Section title="Recently Used" titleMargin="24px">

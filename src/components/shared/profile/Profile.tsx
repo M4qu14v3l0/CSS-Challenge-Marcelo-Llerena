@@ -3,7 +3,11 @@ import { useState } from "react";
 
 import styles from "./Profile.module.css";
 
-export const Profile = () => {
+interface ProfileProps {
+  showProfile?: string;
+}
+
+export const Profile = ({ showProfile }: ProfileProps) => {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -11,7 +15,7 @@ export const Profile = () => {
   };
 
   return (
-    <section className={styles.profileContainer}>
+    <section className={`${styles.profileContainer} ${showProfile}`}>
       <div className={styles.profileIcons}>
         <div onClick={toggleDarkMode}>
           {darkMode ? (
