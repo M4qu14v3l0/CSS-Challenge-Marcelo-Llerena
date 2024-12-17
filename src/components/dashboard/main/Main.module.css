@@ -1,0 +1,35 @@
+.mainContainer {
+  margin: 0px 19px 0px 22px;
+  padding: 25px 19px 0px 16px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.showProfile {
+  display: none;
+}
+
+.main section:last-child {
+  margin-bottom: 0px;
+  background-color: red;
+}
+
+@media (max-width: 560px) {
+  .showProfile {
+    display: block;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+  }
+
+  .showProfile {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+
+  .showProfile p {
+    display: none;
+  }
+}

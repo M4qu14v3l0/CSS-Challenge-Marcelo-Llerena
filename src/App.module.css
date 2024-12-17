@@ -1,0 +1,25 @@
+.appContainer {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 172px auto 252px;
+  background-color: var(--general-background-color);
+}
+
+@media (max-width: 1025px) {
+  .appContainer {
+    grid-template-columns: auto 252px;
+  }
+}
+
+@media (max-width: 560px) {
+  .appContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .appContainer {
+    height: 100%;
+  }
+}

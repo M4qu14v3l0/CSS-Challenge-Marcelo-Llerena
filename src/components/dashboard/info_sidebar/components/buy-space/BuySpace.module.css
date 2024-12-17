@@ -1,0 +1,45 @@
+.buySpace {
+  background-color: var(--card-background);
+  margin: 0px 25px 0px 33px;
+  padding: 20px 38px 10px 37px;
+  border-radius: 18px;
+  width: 194px;
+  height: 202px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.imgGradient {
+  width: 119px;
+  height: 73px;
+  background: linear-gradient(
+    270.15deg,
+    #689ff8 0.15%,
+    #ff6860 54.7%,
+    #ff9f00 99.9%
+  );
+  border-radius: 11px;
+  margin-bottom: 8px;
+}
+
+.buySpaceText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-h2);
+  gap: 4px;
+}
+
+.buySpaceText h4 {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.buySpaceText p {
+  font-size: 8px;
+}
